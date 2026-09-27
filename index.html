@@ -379,11 +379,13 @@
         <a href="https://wa.me/5355642848" target="_blank" rel="noopener" class="boton boton-pill">Escribir por WhatsApp</a>
       </div>
 
-      <form class="formulario" data-formulario>
-        <label>Nombre y apellido <input type="text" name="nombre" placeholder="Tu nombre" required></label>
-        <label>Nombre del negocio <input type="text" name="negocio" placeholder="Opcional"></label>
-        <label>Correo <input type="email" name="correo" placeholder="tu@correo.com" required></label>
-        <label>&iquest;Qué te está costando ahora? <textarea name="mensaje" rows="5" placeholder="Cuéntanos el problema en dos líneas..." required></textarea></label>
+      <form class="formulario" data-formulario
+             data-correo="marcosbordas06@gmail.com"
+             data-asunto="Mensaje desde Consultora Nexo">
+        <label>Nombre y apellido <input type="text" name="nombre" data-etiqueta="Nombre" placeholder="Tu nombre" required></label>
+        <label>Nombre del negocio <input type="text" name="negocio" data-etiqueta="Negocio" placeholder="Opcional"></label>
+        <label>Correo <input type="email" name="correo" data-etiqueta="Correo" placeholder="tu@correo.com" required></label>
+        <label>&iquest;Qué te está costando ahora? <textarea name="mensaje" data-etiqueta="El problema" rows="5" placeholder="Cuéntanos el problema en dos líneas..." required></textarea></label>
         <button class="boton" type="submit">Solicitar llamada gratis</button>
         <p class="aviso" data-aviso></p>
       </form>
